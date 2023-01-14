@@ -9,11 +9,14 @@ app = Flask(__name__)
 def home():
     print("Request for Home Page!!")
     return(
-        "Hello, Welcome to the Home Page!"
-        "Available routes :"
-        "/api/v1.0/precipitation"
-        "/api/v1.0/stations"
-        "/api/v1.0/tobs"
-        "/api/v1.0/<start>"
-        "/api/v1.0/<start>/<end>"
+        "Hello, Welcome to the Home Page!<br/>"
+        "Available routes :<br/>"
+        "/api/v1.0/precipitation<br/>"
+        "/api/v1.0/stations<br/>"
+        "/api/v1.0/tobs<br/>"
+        "/api/v1.0/<start><br/>"
+        "/api/v1.0/<start>/<end><br/>"
     )
+
+if __name__ == "__main__":
+    app.run(debug=True)
